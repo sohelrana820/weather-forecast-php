@@ -1,0 +1,29 @@
+{
+  "name": "sohelrana820/weather-forecast-php",
+  "description": "PHP wrapper for the Dark Sky API (formerly Forecast.io)",
+  "keywords": [
+    "Weather Forecast",
+    "Dark Sky API",
+    "Forecast PHP API",
+    "Forecast PHP Wrapper",
+    "Forecast.io PHP WRAPPER"
+  ],
+  "homepage": "https://github.com/sohelrana820/weather-forecast-php",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "sohelrana820",
+      "email": "me.sohelrana@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.5.0",
+    "phpunit/phpunit": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "SohelRana820\\Forecast\\": "src"
+    }
+  }
+}
