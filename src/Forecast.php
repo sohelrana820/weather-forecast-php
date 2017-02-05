@@ -150,37 +150,12 @@ class Forecast
         $this->options = $options;
     }
 
-
     /**
      * @return ForecastProperty
      */
     public function getCurrentlyData()
     {
-        $property = new ForecastProperty();
-        $property->setTime($this->response['currently']['time']);
-        $property->setSummary($this->response['currently']['summary']);
-        $property->setIcon($this->response['currently']['icon']);
-        $property->setPrecipIntensity($this->response['currently']['precipIntensity']);
-        $property->setPrecipProbability($this->response['currently']['precipProbability']);
-        $property->setPrecipType($this->response['currently']['precipType']);
-        $property->setTemperature($this->response['currently']['temperature']);
-        $property->setApparentTemperature($this->response['currently']['apparentTemperature']);
-        $property->setDewPoint($this->response['currently']['dewPoint']);
-        $property->setHumidity($this->response['currently']['humidity']);
-        $property->setWindSpeed($this->response['currently']['windSpeed']);
-        $property->setWindBearing($this->response['currently']['windBearing']);
-        $property->setCloudCover($this->response['currently']['cloudCover']);
-        $property->setPressure($this->response['currently']['pressure']);
-        $property->setOzone($this->response['currently']['ozone']);
-        return $property;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getMinutelyData()
-    {
-        return $this->response['minutely'];
+        return $this->response['currently'];
     }
 
     /**
