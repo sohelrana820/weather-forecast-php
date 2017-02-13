@@ -1,5 +1,5 @@
 # weather-forecast-php
-weather-forecast-php is php wrapper implementation of [Dark Sky](https://darksky.net) Api (formerly [Forecast.io](http://forecast.io)).
+weather-forecast-php is php wrapper implementation of [Dark Sky](https://darksky.net) Api (formerly [Forecast.io](http://forecast.io))
 
 ## Installation
 Installation is really easy through [composer](http://getcomposer.org)
@@ -34,7 +34,7 @@ var_dump($response->getFlags());
 
  ```
  
- #### How to set optional parameters.
+### How to set optional parameters.
  
 This library allow to set all of their optional parameters (lng, units, etc)
  ```php
