@@ -33,18 +33,40 @@ class ForecastTests extends PHPUnit_Framework_TestCase
         $this->assertNull($forecast->request());
     }
 
+    public function testSecretKeySetterGetter()
+    {
+        $forecast = new Forecast();
+        $forecast->setSecretKey('1111');
+        $this->assertEquals('1111', $forecast->getSecretKey());
+    }
+
+    public function testTimezoneGetter()
+    {
+        $this->assertNotNull($this->response->getTimezone());
+    }
+
     public function testRequestResponseIsObject()
     {
         $this->assertTrue(is_object($this->response));
     }
 
-    public function testRetrievedCurrentlyData()
+    public function testWeatherCurrentlyData()
     {
         $this->assertTrue(is_array($this->response->getCurrentlyData()));
     }
 
-    public function testRetrievedHourlyData()
+    public function testWeatherHourlyData()
     {
         $this->assertTrue(is_array($this->response->getHourlyData()));
+    }
+
+    public function testWeatherDailyData()
+    {
+        $this->assertTrue(is_array($this->response->getDailyData()));
+    }
+
+    public function testFlags()
+    {
+        $this->assertTrue(is_array($this->response->getFlags()));
     }
 }

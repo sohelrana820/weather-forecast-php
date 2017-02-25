@@ -42,7 +42,7 @@ class Forecast
     /**
      * Result constructor.
      */
-    public function __construct($secretKey)
+    public function __construct($secretKey = null)
     {
         $this->secretKey = $secretKey;
     }

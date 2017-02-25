@@ -1,4 +1,6 @@
 .idea/*
 .git/*
 /vendor/
+build/*
 config.php
+coverage.clover
