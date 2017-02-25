@@ -15,21 +15,20 @@ composer require sohelrana820/weather-forecast-php
 use SohelRana820\Forecast\Forecast;
 
 $forecast = new Forecast(API_KEY);
-$forecast = new Forecast(API_KEY);
 $forecast->setLatitude(DEFAULT_LATITUDE);
 $forecast->setLongitude(DEFAULT_LATITUDE);
 $response = $forecast->request();
 
-// Retrieve the current weather data
+// Retrieve the current data
 var_dump($response->getCurrentlyData());
 
-// Retrieve the hourly weather data
+// Retrieve the hourly data
 var_dump($response->getHourlyData());
 
-// Retrieve the daily weather data
-var_dump($response->getHourlyData());
+// Retrieve the daily data
+var_dump($response->getDailyData());
 
-// Retrieve weather data
+// Retrieve weather flags
 var_dump($response->getFlags());
 
  ```
