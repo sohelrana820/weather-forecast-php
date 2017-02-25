@@ -154,7 +154,7 @@ class Forecast
     }
 
     /**
-     * @return ForecastProperty
+     * @return mixed
      */
     public function getCurrentlyData()
     {
