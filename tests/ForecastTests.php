@@ -2,7 +2,9 @@
 
 use SohelRana820\Forecast\Forecast;
 
-require __DIR__.'/../config.php';
+define("API_KEY", '7201175b43264d2ba9916983aa2a2cc2');
+define("DEFAULT_LATITUDE", '42.3601');
+define("DEFAULT_LONGIUDE", '-71.0589');
 
 class ForecastTests extends PHPUnit_Framework_TestCase
 {
