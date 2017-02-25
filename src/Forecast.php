@@ -75,7 +75,10 @@ class Forecast
      */
     private function buildUrl()
     {
-        return $this->secretKey . '/' . $this->getLatitude() . ',' . $this->getLongitude() . '?' . http_build_query($this->options);
+        $url = $this->secretKey . '/' . $this->getLatitude();
+        $url .= ','. $this->getLongitude() . '?'.
+        $url .= http_build_query($this->options);
+        return $url;
     }
 
     /**
