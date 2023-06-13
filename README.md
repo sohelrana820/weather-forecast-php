@@ -41,3 +41,4 @@ This library allow to set all of their optional parameters (lng, units, etc)
  $forecast->setOptions($optionsArray = ['units' => 'si']);
  ```
  You can pass all optional parameter as array . See there all optional parameter [official documentation](https://darksky.net/dev/docs).
+ test
